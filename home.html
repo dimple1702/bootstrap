@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required Meta Tag-->
+    <meta charset="UTF-8">
+    
+    <!--Logo on Title bar-->
+    <link rel="icon" href="assets/imgs/logo.png">
+    <title>Tour and Travel</title>
+  
+    <!--For font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        
+    <!--Adding BootSrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!--CSS File-->
+    <link rel="stylesheet" href="assets/css/home.css" type="text/css">
+  
+    <!--For jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+       $('[data-toggle="popover"]').popover()
+      })
+    </script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <div class= "container-fluid header">
+      How we are responsible to COVID-19
+      <!-- Button trigger modal -->
+      <button type="button" class="badge badge-pill badge-danger mx-2 my-2" data-toggle="modal" data-target="#exampleModal">
+        Announcement!!
+      </button>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content text-dark">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">I am a Modal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              We are working from home during this pandemic.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <a class="navbar-brand" href="#">
+          <img src="assets/imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="title" loading="lazy">
+          <span style="color: #fff;">Tour and Travel</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Site Examples
+              </a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-white dropdown-hover" href="travel-site.html">Travel Site</a>
+                <a class="dropdown-item text-white dropdown-hover" href="#">Trip Search</a>
+              </div>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Live Demo Blocks
+            </a>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white dropdown-hover" href="header.html">Headers</a>
+              <a class="dropdown-item text-white dropdown-hover" href="team.html">Team</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Top-section(1st)-->
+    <div class="jumbotron-back">   
+        <div class="jumbotron jumbotron-fluid jumbotron-section my-5">
+        <div class="container">
+          <h3 class="display-4"><b>Go on a journey of your dreams!!</b></h3>
+          <p class="lead">Sometimes the problem is not that there is no time to travel, but that there is no time to plan it. We are always in a hurry, and we can not slow down and take the time to plan our vacations. But you are lucky, you have us. Save time and use our service.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Middle Section(2nd)-->
+  <div class="container-fluid bg-dark text-white" style="padding: 20px;">
+    <div class="row mx-3 my-4" style="text-align: center;">
+      <div class="col-sm-6">
+        <h4 class="mt-0">This trip will be the best</h4>
+        <p>Support Acme Outdoors</p>
+      </div>
+      <div class="col-sm-6 my-2">
+        <p>In travel and after it, as a rule, there is an increase in the general vitality and ability to resist the external pressure of the environment. The need to solve everyday road problems contributes to the development of practical intelligence.</p>
+      </div>
+    </div>
+    <!--Three Cards-->
+    <div class="row mx-3 mb-4">
+      <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="img-zoom">
+                <img src="assets/imgs/china.jpg" class="card-img-top" alt="shop">
+            </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Memories of the trip</h5>
+            <p class="card-text">Even if you feel confident and safe, your family and friends will surely be worried during your solitary journey.</p>
+            <button type="button" class="btn btn-outline-dark" data-container="body" data-toggle="popover" data-placement="bottom" data-content="China Autumn, City Tour Urban.">
+                Check Here!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="img-zoom">
+            <img src="assets/imgs/britain.jpg" class="card-img-top" alt="donate">
+          </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Tips for a budget trip</h5>
+            <p class="card-text">Travel is the best way to understand yourself and find out what you like, what you love, who you really are.</p>
+            <button type="button" class="btn btn-outline-dark" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Great Britain Travel
+            City Tours, Historic, Park">
+            Check Here!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="img-zoom">
+                <img src="assets/imgs/paris.jpg" class="card-img-top" alt="gift-card">
+            </div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Your travel blog</h5>
+            <p class="card-text">Prioritize. All the sights can not be seen. Not resting at all, you run the risk of being oversaturated.</p>
+            <button type="button" class="btn btn-outline-dark" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Exclusive ParisTrip
+            City Tours, Urban">
+            Check Here!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+    <!--Bottom Section(3rd)-->
+    <div class="bottom-img">
+        <img src="assets/imgs/carousal-9.jpg" class="img-fluid" alt="bottom-img">
+    </div>
+
+    <!--Footer-->
+    <div class="bg-dark" style="padding: 20px;">
+        <div class="row text-white mx-5">
+          <div class="col md-5">
+            <a class="navbar-brand" href="#">
+              <img src="assets/imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="title" loading="lazy">
+              <span style="color: #fff;">Tour and Travel</span>
+            </a>
+            <h5 class="mt-0">Company Info</h5>
+          </div>
+          <div class="col md-5">
+            <h4 class="mt-0">Contacts</h4>
+            <img src="assets/imgs/mobile.png" width="30" height="25" class="d-inline-block align-top mb-2 mr-2" alt="title" loading="lazy">
+              <span style="color: #fff;">123-456-78901</span><br>
+            <img src="assets/imgs/location.png" width="30" height="30" class="d-inline-block align-top mb-1 mr-2" alt="title" loading="lazy">
+              <span style="color: #fff;">London, 51 Street, 43</span><br>
+            <img src="assets/imgs/clock.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="title" loading="lazy">
+              <span style="color: #fff;">Open 24/7/365</span>
+          </div>
+        </div>
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!--https://mobirise.com/extensions/travelm4/traveldemo.html-->
